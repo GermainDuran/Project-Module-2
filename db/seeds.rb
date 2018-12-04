@@ -32,15 +32,18 @@ Event.create(title:"Christmas debut",description:"LATER",location:"Valencia",tim
 Event.create(title:"Summer sales",description:"LATER",location:"Tokio",time: "6:00 PM", designer: Designer.first)
 
 
-UserEvent.create(user_id: User.first,event_id: Event.first)
-UserEvent.create(user_id: User.first,event_id: Event.second)
-UserEvent.create(user_id: User.third,event_id: Event.third)
-UserEvent.create(user_id: User.first,event_id: Event.third)
-UserEvent.create(user_id: User.fourth,event_id: Event.fourth)
-UserEvent.create(user_id: User.fifth,event_id: Event.fifth)
+UserEvent.create(user: User.first,event: Event.first)
+UserEvent.create(user: User.first,event: Event.second)
+UserEvent.create(user: User.third,event: Event.third)
+UserEvent.create(user: User.first,event: Event.third)
+UserEvent.create(user: User.fourth,event: Event.fourth)
+UserEvent.create(user: User.fifth,event: Event.fifth)
 
-UserFavorite.create(user_id: User.first ,designer_id: Designer.first)
-UserFavorite.create(user_id: User.second ,designer_id: Designer.second)
-UserFavorite.create(user_id: User.third ,designer_id: Designer.third)
-UserFavorite.create(user_id: User.fourth ,designer_id: Designer.fourth)
-UserFavorite.create(user_id: User.first ,designer_id: Designer.second)
+UserFavorite.create(user: User.first ,designer: Designer.first)
+UserFavorite.create(user: User.second ,designer: Designer.second)
+UserFavorite.create(user: User.third ,designer: Designer.third)
+UserFavorite.create(user: User.fourth ,designer: Designer.fourth)
+UserFavorite.create(user: User.first ,designer: Designer.second)
+
+
+Comment.create(content:"excelent", user: User.first, event: Event.first)

@@ -1,9 +1,12 @@
 class DesignersController < ApplicationController
   before_action :find_designer, only:[:show, :edit]
 
+
  def index
   # @designers = Designer.all
     @designers = Designer.all
+    @designers = Designer.search(params[:term])
+
 
  end
 

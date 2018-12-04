@@ -3,6 +3,7 @@ class User < ApplicationRecord
   has_many :events, through: :user_events
   has_many :user_favorites
   has_many :designers, through: :user_favorites
+  has_many :comments
 
   validates :name, presence: true
   validates :email, presence: true

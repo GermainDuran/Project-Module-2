@@ -1,0 +1,13 @@
+<h3 class="subtitle">Add Comment</h3>
+
+<% if flash[:messages] %>
+  <p class="error-message"> <%= flash[:message] %></p>
+<% end %>
+
+<%= form_tag '/comments', method:'post' do %>
+  <%= text_area_tag 'comment[content]', nil, class:"field comment-box" %><br>
+
+  <input type="hidden" name="comment[user_id]" value="<%= session[:user_id] %>">
+  <input type="hidden" name="comment[phrase_id]" value="<%= params[:id] %>">
+  <%= submit_tag "Create Comment", class:"button-text submit-button" %>
+<% end %>
