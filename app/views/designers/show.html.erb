@@ -1,0 +1,13 @@
+<h1><%= @designer.name %></h1>
+Style:<%= @designer.style %>
+
+
+<h1><% @designer.events.each do |event|  %></h1>
+    Title:  <%=  event.title   %>
+    <br></br>
+    Description:  <%=  event.description%>
+    <br></br>
+    Location:    <%= event.location %>
+    <br></br>
+    Time:    <%= event.time %>
+          <% end %>
