@@ -1,13 +1,19 @@
-<h1>EVENTS</h1>
+
 <div class="col">
+  <h1>EVENTS</h1>
 
 
-<img src= https://bizbash-production.imgix.net/content/editorial/storyimg/big/_dsc0424-copy-copie.jpg?auto=format class="rounded mx-auto d-block">
-<img src=http://www.pacificterrace.com/resourcefiles/blogsmallimages/kris-atomic-73935_1-337614.jpg>
-</div>
+<div class="mx-auto" style="width: 200px;"><img src= https://bizbash-production.imgix.net/content/editorial/storyimg/big/_dsc0424-copy-copie.jpg?auto=format class="rounded mx-auto d-block"></div>
+<div class="mx-auto" style="width: 200px;"><img src=http://www.pacificterrace.com/resourcefiles/blogsmallimages/kris-atomic-73935_1-337614.jpg></div>
+
+
+
+
+
 
 <% @events.each do |event| %>
-  <div><li> <%= link_to event.title, event_path(event) %> </li></div>
+<ul class="list-group"
+  <div><li class="list-group-item"> <%= link_to event.title, event_path(event) %> </li></div>
 <% end %>
 
 
