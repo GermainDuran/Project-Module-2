@@ -1,9 +1,13 @@
-<h1><%= @designer.name %></h1>
-<img src= <%= @designer.img_url %> alt="Hey">
+<div class="Ralph">
+  <h1 class="lauren"><%= @designer.name %></h1>
+</div>
 
-<br></br>
+
+<img src= <%= @designer.img_url %> class="rounded mx-auto d-block">
+<div class="arturo">
+
 <h4>Style:</h4><%= @designer.style %>
-
+</div>
 
 <% @designer.events.each do |event|  %>
     <h2>Title:</h2><%=  event.title   %>
@@ -13,8 +17,6 @@
     <h2>Location:</h2>    <%= event.location %>
     <br></br>
     <h2>Time:</h2>    <%= event.time %>
-          <% end %>
 
-
-<%= button_to "Events", events_path, method: :get %>
-<%= button_to "go back to Designers", designers_path, method: :get %>
+<% end %>
+<%= button_to "Events of this designer", events_path, method: :get, :class =>'btn btn-primary' %>

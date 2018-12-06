@@ -1,15 +1,18 @@
-<h1>EVENTS</h1>
+<div class="even1">
+<h1 class="event2">EVENTS</h1>
 <div class="col">
 
+</div>
 
 <img src= https://bizbash-production.imgix.net/content/editorial/storyimg/big/_dsc0424-copy-copie.jpg?auto=format class="rounded mx-auto d-block">
 <img src=http://www.pacificterrace.com/resourcefiles/blogsmallimages/kris-atomic-73935_1-337614.jpg>
 </div>
 
+<div class="color-d1">
 <% @events.each do |event| %>
   <div><li> <%= link_to event.title, event_path(event) %> </li></div>
 <% end %>
-
+</div>
 
 <%= form_tag(events_path, method: :get) do %>
   <%= text_field_tag :term, params[:term] %>

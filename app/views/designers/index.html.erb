@@ -1,7 +1,8 @@
 <div class="container">
   <div class="row">
-
-    <h1>DESIGNERS</h1>
+    <div class="color-d2">
+    <h1 class="color-designer-name"> DESIGNERS</h1>
+    </div>
     <img src=http://www.marwaricollegeranchi.com/images/fdimages/fdmain.gif>
     <img src=http://worlduniversityofdesign.ac.in/assets/images/bgs/fd2.jpg>
   </div>
@@ -13,9 +14,11 @@
   <%= submit_tag 'Search', name: nil, :class =>'btn btn-primary' %>
 <% end %>
 
+<div class="color-d1">
+
 
 <% @designers.each do |designer| %>
   <div><li><%= link_to designer.name, designer_path(designer) %></li></div>
 <% end %>
-
+</div>
 </div>
