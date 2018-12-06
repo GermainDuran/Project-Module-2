@@ -1,5 +1,8 @@
+<h1>DESIGNERS</h1>
+<img src=http://www.marwaricollegeranchi.com/images/fdimages/fdmain.gif>
+<img src=http://worlduniversityofdesign.ac.in/assets/images/bgs/fd2.jpg>
 <% @designers.each do |designer| %>
-  <div><%= link_to designer.name, designer_path(designer) %></div>
+  <div><li><%= link_to designer.name, designer_path(designer) %></li></div>
 <% end %>
 
 <%= form_tag(designers_path, method: :get) do %>

@@ -11,4 +11,8 @@ class Event < ApplicationRecord
           order('id DESC')
         end
   end
+
+
+
+
 end

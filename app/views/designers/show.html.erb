@@ -1,16 +1,20 @@
 <h1><%= @designer.name %></h1>
-Style:<%= @designer.style %>
+<img src= <%= @designer.img_url %> alt="Hey">
+
+<br></br>
+<h4>Style:</h4><%= @designer.style %>
 
 
-<h1><% @designer.events.each do |event|  %></h1>
-    Title:  <%=  event.title   %>
+<% @designer.events.each do |event|  %>
+    <h2>Title:</h2><%=  event.title   %>
     <br></br>
-    Description:  <%=  event.description%>
+    <h2>Description:</h2>  <%=  event.description%>
     <br></br>
-    Location:    <%= event.location %>
+    <h2>Location:</h2>    <%= event.location %>
     <br></br>
-    Time:    <%= event.time %>
+    <h2>Time:</h2>    <%= event.time %>
           <% end %>
 
-<%= button_to "Designers", designers_path, method: :get %>
-<%= link_to "Click here to see more events", events_path %></div>
+
+<%= button_to "Events", events_path, method: :get %>
+<%= button_to "go back to Designers", designers_path, method: :get %>

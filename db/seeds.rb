@@ -18,18 +18,45 @@ User.create(name: "Arturo Duran",email: "duran@gmail.com")
 User.create(name: "Carlos Smith",email: "carlossmith@gmail.com")
 
 
-Designer.create(name: "Versace", style: "Animal print")
-Designer.create(name: "Giovanni Sccutaro", style: "Classic")
-Designer.create(name: "Mark Jacobs", style: "Modern")
-Designer.create(name: "Stella Mccartney", style: "Modern and Classic")
-Designer.create(name: "Coco Chanel", style: "Boutique")
+Designer.create(name: "Tommy Hilfiger", style: "Animal print", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/tommy2.jpg")
+Designer.create(name: "Roberto Cavalli", style: "Classic", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/roberto-cavalli1.jpg")
+Designer.create(name: "Tom Ford", style: "Modern", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2012/07/imagemtom_1.jpg")
+Designer.create(name: "Christian Dior", style: "Modern and Classic", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/Christian-Dior-Fashion-Designer.jpg")
+Designer.create(name: "Coco Chanel", style: "Boutique", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/02/1936-Photo-Lipnitzki_v_28jan13_b_426x639.jpg")
+Designer.create(name: "Donna Karan", style: "Modern", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/Donna-Karan.jpg")
+Designer.create(name: "Giorgio Armani ", style: "Classic and modern", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/Sem-T%C3%ADtulo-11.jpg")
+Designer.create(name: "Calvin Klein", style: "Classic modernity", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/CALVI.jpg")
+Designer.create(name: "Donatella Versace" , style: "Boutique ", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/Donatella-Versace.jpg")
+Designer.create(name: "Ralph Lauren" , style: "Classic", img_url: "https://www.lovehappensmag.com/blog/wp-content/uploads/2013/09/Ralph-Lauren.jpg")
 
-Event.create(title:"Versace fan boy",description:"LATER",location:"Broadway st, NYC",time: "10:00 PM", designer: Designer.first)
-Event.create(title:"Fashion week",description:"LATER",location:"Miami",time: "8:00 PM", designer: Designer.second)
-Event.create(title:"Fall fashion debut",description:"LATER",location:"Italy",time: "5:00 PM", designer: Designer.third)
-Event.create(title:"Winter week",description:"LATER",location:"Caracas",time: "9:30 PM", designer: Designer.fourth)
-Event.create(title:"Christmas debut",description:"LATER",location:"Valencia",time: "8:00 PM", designer: Designer.fifth)
-Event.create(title:"Summer sales",description:"LATER",location:"Tokio",time: "6:00 PM", designer: Designer.first)
+
+
+Event.create(title:"Versace fan boy",description:"Come to see our amazing collection and enjoy the biggest discount in the season",location:"Broadway st, NYC",time: "10:00 PM", designer: Designer.first, img_url: "")
+Event.create(title:"Fashion week",description:"The best week of the fashion world is right here, join us to have a glam night",location:"Miami",time: "8:00 PM", designer: Designer.second, img_url: )
+Event.create(title:"Fall fashion debut",description:"Are you ready for fall? come to join us and enjoy of our specials discount",location:"Italy",time: "5:00 PM", designer: Designer.third, img_url: )
+Event.create(title:"Winter week",description:"Are you cold on wintertime? don't miss the newest jackets collection",location:"Caracas",time: "9:30 PM", designer: Designer.fourth, img_url: )
+Event.create(title:"Christmas debut",description:"Christmas is the favorite holiday, so you gotta be ready for it, come to our event and enjoy the discounts",location:"Valencia",time: "8:00 PM", designer: Designer.fifth, img_url: )
+Event.create(title:"Summer sales",description:"Be ready for summer, come and enjoy the our discounts",location:"Tokio",time: "6:00 PM", designer: Designer.first, img_url: "http://www.genovatoday.it/~media/horizontal-hi/68644378894595/saldi-estivi-2.jpg")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 UserEvent.create(user: User.first,event: Event.first)
@@ -46,4 +73,4 @@ UserFavorite.create(user: User.fourth ,designer: Designer.fourth)
 UserFavorite.create(user: User.first ,designer: Designer.second)
 
 
-Comment.create(content:"excelent", user: User.first, event: Event.first)
+#Comment.create(content:"excelent", user: User.first, event: Event.first)

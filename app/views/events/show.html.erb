@@ -1,8 +1,10 @@
 <h1><%= @event.title %></h1>
-<p><%= @event.description %></p>
-<p><%= @event.location %></p>
-<p><%= @event.time %></p>
+<img src= <%= @event.img_url %> alt="Hey">
+<h2>Description:</h2><p><%= @event.description %></p>
+<h2>Location:</h2><p><%= @event.location %></p>
+<h2>Time:</h2><p><%= @event.time %></p>
+
 
 
 <%= button_to "Events", events_path, method: :get %>
-<%= link_to "Click here to give a comment", new_comment_path %></div>
+<%= button_to "Give a comment", new_comment_path, method: :get %></div>
