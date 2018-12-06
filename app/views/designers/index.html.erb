@@ -1,11 +1,21 @@
-<h1>DESIGNERS</h1>
-<img src=http://www.marwaricollegeranchi.com/images/fdimages/fdmain.gif>
-<img src=http://worlduniversityofdesign.ac.in/assets/images/bgs/fd2.jpg>
+<div class="container">
+  <div class="row">
+
+    <h1>DESIGNERS</h1>
+    <img src=http://www.marwaricollegeranchi.com/images/fdimages/fdmain.gif>
+    <img src=http://worlduniversityofdesign.ac.in/assets/images/bgs/fd2.jpg>
+  </div>
+</div>
+<div class="container">
+
+<%= form_tag(designers_path, method: :get) do %>
+  <%= text_field_tag :term, params[:term] %>
+  <%= submit_tag 'Search', name: nil, :class =>'btn btn-primary' %>
+<% end %>
+
+
 <% @designers.each do |designer| %>
   <div><li><%= link_to designer.name, designer_path(designer) %></li></div>
 <% end %>
 
-<%= form_tag(designers_path, method: :get) do %>
-  <%= text_field_tag :term, params[:term] %>
-  <%= submit_tag 'Search', name: nil %>
-<% end %>
+</div>

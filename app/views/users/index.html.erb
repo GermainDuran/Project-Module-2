@@ -1,22 +1,35 @@
-<h1>WELCOME TO STYLY</h1>
 
-<img src=http://nidmag.com/steam/dynamic/W1siZmYiLCIvdmFyL3d3dy9jYXJkZmxpcC9wdWJsaWMvc2l0ZXMvNThjOGMwYmUyNTY3YTU4NTNjMWY0YTdjL2NvbnRlbnRfZW50cnk1OGNiZjJlMjI1NjdhNTI5YTZmODdiZGMvNThjYmY2YzAyNTY3YTUyOWE2Zjg3ZmY1L2ZpbGVzL0NvdXJ0ZXN5X29mX0Nhc2V5X0tlbGJhdWdoX1RoZV9OZXdfWW9ya19UaW1lcy5qcGciXSxbInAiLCJ0aHVtYiIsIjExNDB4NzAwIyJdXQ/fa4956b7f091050e/Courtesy_of_Casey_Kelbaugh_The_New_York_Times.jpg alt="Hey">
-
-
-<h3>Sign up to get info on the latest samples sales.</h3>
-
-
-<%= render partial: 'form' %>
-<%= form_for @user do |f| %>
-  <%= f.label :Username %>
-  <%= f.text_field :name %>
-  <%= f.label :email %>
-  <%= f.text_field :email %>
-  <%= f.label :password %>
-  <%= f.password_field :password %>
+<div class="container">
+  <div class="row">
+    <div class="rounded mx-auto d-block">
+    <h1>WELCOME TO STYLY </h1>
+      </div>
+  </div>
+</div>
 
 
+<div class="container">
+  <div class="row">
+    <img src=http://nidmag.com/steam/dynamic/W1siZmYiLCIvdmFyL3d3dy9jYXJkZmxpcC9wdWJsaWMvc2l0ZXMvNThjOGMwYmUyNTY3YTU4NTNjMWY0YTdjL2NvbnRlbnRfZW50cnk1OGNiZjJlMjI1NjdhNTI5YTZmODdiZGMvNThjYmY2YzAyNTY3YTUyOWE2Zjg3ZmY1L2ZpbGVzL0NvdXJ0ZXN5X29mX0Nhc2V5X0tlbGJhdWdoX1RoZV9OZXdfWW9ya19UaW1lcy5qcGciXSxbInAiLCJ0aHVtYiIsIjExNDB4NzAwIyJdXQ/fa4956b7f091050e/Courtesy_of_Casey_Kelbaugh_The_New_York_Times.jpg class="img-thumbnail">
+
+  </div>
+</div>
 
 
-  <%= f.submit %>
-<% end %>
+
+<div class="container">
+<div class="form-group">
+  <h3>Sign up to get info on the latest samples sales.</h3>
+  <%= render partial: 'form' %>
+  <%= form_for @user do |f| %>
+    <%= f.label :Username %>
+    <%= f.text_field :name %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.submit 'Create user', :class =>'btn btn-primary' %>
+  <% end %>
+</div>
+</div>

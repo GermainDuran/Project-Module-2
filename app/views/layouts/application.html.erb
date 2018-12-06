@@ -10,8 +10,13 @@
   </head>
 
   <body>
+    <div class="container">
+    <%= button_to "Designers", designers_path, method: :get %>
+    <%= button_to "Events", events_path, method: :get %>
+    < background-color: #F5F5F5;>
+    </div>
 
-    <%= button_to "Designers", designers_path, method: :get %> <%= button_to "Events", events_path, method: :get %>
+
     <%= yield %>
   </body>
 </html>

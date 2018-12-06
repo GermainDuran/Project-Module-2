@@ -31,11 +31,11 @@ Designer.create(name: "Ralph Lauren" , style: "Classic", img_url: "https://www.l
 
 
 
-Event.create(title:"Versace fan boy",description:"Come to see our amazing collection and enjoy the biggest discount in the season",location:"Broadway st, NYC",time: "10:00 PM", designer: Designer.first, img_url: "")
-Event.create(title:"Fashion week",description:"The best week of the fashion world is right here, join us to have a glam night",location:"Miami",time: "8:00 PM", designer: Designer.second, img_url: )
-Event.create(title:"Fall fashion debut",description:"Are you ready for fall? come to join us and enjoy of our specials discount",location:"Italy",time: "5:00 PM", designer: Designer.third, img_url: )
-Event.create(title:"Winter week",description:"Are you cold on wintertime? don't miss the newest jackets collection",location:"Caracas",time: "9:30 PM", designer: Designer.fourth, img_url: )
-Event.create(title:"Christmas debut",description:"Christmas is the favorite holiday, so you gotta be ready for it, come to our event and enjoy the discounts",location:"Valencia",time: "8:00 PM", designer: Designer.fifth, img_url: )
+Event.create(title:"Versace fan boy",description:"Come to see our amazing collection and enjoy the biggest discount in the season",location:"Broadway st, NYC",time: "10:00 PM", designer: Designer.first, img_url: "https://pmcwwd.files.wordpress.com/2017/09/versace-rtw-spring-2018-milan-fashion-week-mfw-002.jpg?w=683")
+Event.create(title:"Fashion week",description:"The best week of the fashion world is right here, join us to have a glam night",location:"Miami",time: "8:00 PM", designer: Designer.second, img_url: "https://www.duanestreethotel.com/wp-content/uploads/2014/08/Runway.jpg" )
+Event.create(title:"Fall fashion debut",description:"Are you ready for fall? come to join us and enjoy of our specials discount",location:"Italy",time: "5:00 PM", designer: Designer.third, img_url: "https://si.wsj.net/public/resources/images/BN-XU052_ONESHE_16H_20180308123844.jpg" )
+Event.create(title:"Winter week",description:"Are you cold on wintertime? don't miss the newest jackets collection",location:"Caracas",time: "9:30 PM", designer: Designer.fourth, img_url: "http://www.vfashionworld.com/wp-content/uploads/2017/03/top-trends-milano-fashion-week-fall-winter-2017-2018-featred-image-vfw-magazine.jpg" )
+Event.create(title:"Christmas debut",description:"Christmas is the favorite holiday, so you gotta be ready for it, come to our event and enjoy the discounts",location:"Valencia",time: "8:00 PM", designer: Designer.fifth, img_url: "https://secure.cdn1.wdpromedia.com/resize/mwImage/1/630/354/75/dam/wdpro-assets/dlr/parks-and-tickets/entertainment/disneyland/christmas-fantasy-parade/disneyland-entertainment-christmas-fantasy-parade-00-16x9.jpg?1541698726752" )
 Event.create(title:"Summer sales",description:"Be ready for summer, come and enjoy the our discounts",location:"Tokio",time: "6:00 PM", designer: Designer.first, img_url: "http://www.genovatoday.it/~media/horizontal-hi/68644378894595/saldi-estivi-2.jpg")
 
 
